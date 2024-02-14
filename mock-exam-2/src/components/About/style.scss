@@ -1,0 +1,136 @@
+@import "../../assets/styles/settings.scss";
+
+.about-wrapper{
+    .carousel{
+        position: relative;
+        margin: 20px;
+    
+        .Carousel-wrapper {
+            padding: 50px;
+            z-index: 999;
+            top: 40px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+    
+            h1{
+                font-size: 50px;
+                margin-left: 20px;
+                b{
+                    color: rgb(160, 3, 3);
+                    display: inline-block;
+                    font-size: 46px;
+                }
+            }
+            p{
+                color: darkgray;
+                margin-top: 20px;
+                margin-left: 20px;
+                font-size: 13px;
+            }
+            .btn-1{
+                padding: 10px 27px;
+                background-color: rgb(161, 1, 1);
+                border-radius: 3px;
+                margin: 10px;
+                border: none;
+                color: snow;
+                margin-top: 30px;
+                margin-left: 20px;
+            }
+            .btn-2{
+                padding: 10px 27px;
+                background-color: snow;
+                border-radius: 3px;
+                margin: 10px;
+                border: 2px solid rgb(165, 2, 2);
+                color: black;
+                margin-top: 50px;
+                margin-left: 20px;
+            }
+            button:active{
+                scale: (1.2);
+                box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.381);
+            }
+        } 
+    }
+
+    .our-furniture{
+        display: grid 1fr 1.8fr;
+        margin: 50px;
+        h1 {
+            font-size: 48px;
+            margin: 10px 50px 10px 50px;
+            margin-top: 0px;
+            b{
+                color: rgb(161, 1, 1);
+            }
+        }
+        p{
+            color: darkgray;
+            margin: 15px 50px 15px 50px;
+            font-size: 13px;
+        }
+        .container {
+            display: inline-block;
+            position: relative;
+            .mini-container {
+                margin-bottom: 50px;
+                p{
+                    color: $dark;
+                    font-size: 36px;
+                }
+                background-color: darkgrey;
+                width: 175px;
+                height: 155px;
+                display: inline-block;
+                border-radius: 7px;
+                margin: 40px;
+            }
+            .mini-container * {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+
+    .special-offer{
+        margin: 30px;
+        background: url(mebel1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        b {
+            color: rgb(161, 1, 1);
+        }
+        h1 {
+            font-size: 48px;
+        }
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        .btn-1{
+            padding: 10px 27px;
+            background-color: rgb(161, 1, 1);
+            border-radius: 3px;
+            margin: 10px;
+            border: none;
+            color: snow;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        button:active{
+            scale: (1.2);
+            box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.381);
+        }
+    }
+    .special-offer * {
+        color: $dark-lighter;
+        margin: 15px;
+    }
+    .blog-wrapper {
+        h1{
+            text-align: center;
+        }
+    }
+}

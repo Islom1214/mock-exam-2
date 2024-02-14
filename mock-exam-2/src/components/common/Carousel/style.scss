@@ -1,0 +1,45 @@
+@import "../../../assets/styles/settings";
+
+.carousel-section {
+    position: relative;
+
+    .inner-carousel {
+        position: absolute;
+        z-index: 5;
+        max-width: 500px;
+        min-width: 300px;
+        top: 25%;
+        left: 10%;
+
+        h1 {
+            font-size: 2em;
+            font-family: "Montserrat", sans-serif;
+        }
+        p {
+            margin: 20px 0;
+        }
+        .control-dots * li{
+            color: black;
+        }
+    }
+    .control-dots{
+        li.dot {
+            background-color: $dark;
+            box-shadow:
+                1px 1px 10px 1px $dark-lighter,
+                -1px -1px 10px 1px $dark-lighter;
+            transform: scale(1.5);
+        }
+    }
+
+    .slide-wrapper {
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .control-arrow{
+        color: $dark;
+    }
+}

@@ -16,10 +16,12 @@ function About() {
             <div className="carousel">
                 <CarouselComponent images={images} blurred={false}>
                     <div className="Carousel-wrapper">
-                        <div>
+                        <div className="carousel-content">
                             <h1>Exclusive Deals of</h1>
                             <h1>Furniture <b>Collection</b></h1>
-                            <p>Explore different cattalog for our showroom and online service client happyness for our furniture this</p>
+                            <p>Explore different cattalog for our showroom and online service client
+                                <br />
+                                 happyness for our furniture this</p>
                             <button className="btn-1">Buy Now</button> <button className="btn-2">Explore</button>
                         </div>
                         <div></div>
@@ -44,7 +46,7 @@ function About() {
             </div>
             <div className="blog-wrapper">
                 <h1>New Arrivals</h1>
-                <CompanyBlog />
+                <CompanyBlog images={images} />
             </div>
             <div className="special-offer">
                 <div></div>
